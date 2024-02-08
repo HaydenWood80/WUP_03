@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "Hayden Wood"
+date: "Spring 2024"
 output: html_document
 ---
 
@@ -14,6 +14,15 @@ require(tidyverse)
 require(tigerstats)
 davisdata <- read.csv(file="UCDavis.csv")
 ```
+## Methods
+
+$H_0$ There is no correlation between seat choice and alchohol consumption
+
+$H_0$ There is a direct correlation between seat choice and alchohol consumption
+
+Catagorical - Seats
+Numerical ~ Alchohol consumption
+
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
 
