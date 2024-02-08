@@ -31,12 +31,15 @@ Numerical ~ Alchohol consumption
 ```{r}
 basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```
+
+This command is to select the data for the ggplot
 ## Now add in boxplot
 
 ```{r}
 basicCN + geom_boxplot()
 ```
   
+  This ggplot is showing x "seats and Y "alchohol". It shows very little in the front with 2 outlines, It shows very little again in the middle with 6 outlines, and finally the back shows a major increase in alchohol consumption with 2 outliers
   
 ### get fancy  
 
@@ -44,6 +47,7 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
+This PPplot we just added is very similar to the one we added before but has some visual differences. For example the mean of each seating position is indented. And the outliers for each seat is highlighted in red compared to the black that it laid in
 ## Numerical Summarys 
 
 ## Inferential Tests
