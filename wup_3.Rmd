@@ -53,12 +53,15 @@ This PPplot we just added is very similar to the one we added before but has som
 ```{r}
 favstats(alcohol~Seat,data=davisdata)
 ```
-This shows 3 seating positions median amount of alcohol consumtion. 1.80 being the front, 3.28 being the middle, and 9.63 being the back.
+This shows 3 seating positions median amount of alcohol consumtion. 0 being the front, 1 being the middle, and 4 being the back.
 ## Inferential Tests
 
-
-
-
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+We found that the P value is 0.000116 so we reject $H_0$             
+          
 ## Conclusions
 
-
+The original problem we had to solve was if Seat, as in seat position in class. And alcohol, as in alchohol consumption has a direct correlation. We found that the median for Front was 0. Median for Middle was 1, and median for Back was 4. This gives us a P value of 0.000116 so we reject $H_0$ because p<0.05
